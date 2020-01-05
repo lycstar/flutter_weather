@@ -11,7 +11,7 @@ public class CloudyAndroidViewFlutterPlugin implements FlutterPlugin {
         registrar
                 .platformViewRegistry()
                 .registerViewFactory(
-                        "plugins.flutter.io/cloudyview",
+                        "cloudy",
                         new CloudyAndroidViewFactory(registrar.messenger(), registrar.view()));
     }
 
@@ -24,7 +24,7 @@ public class CloudyAndroidViewFlutterPlugin implements FlutterPlugin {
                 .getPlatformViewsController()
                 .getRegistry()
                 .registerViewFactory(
-                        "plugins.flutter.io/cloudyview", new CloudyAndroidViewFactory(messenger, /*containerView=*/ null));
+                        "cloudy", new CloudyAndroidViewFactory(messenger, /*containerView=*/ null));
     }
 
     @Override
